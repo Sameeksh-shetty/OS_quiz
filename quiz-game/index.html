@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎯 Ultimate Quiz Game</h1>
+
+  <div class="top-bar">
+    <div id="hearts">❤️❤️❤️</div>
+    <div id="score">Score: 0</div>
+  </div>
+
+  <div id="quiz-box">
+    <h2 id="question">Loading...</h2>
+
+    <div class="options">
+      <button onclick="checkAnswer(0)" id="opt0"></button>
+      <button onclick="checkAnswer(1)" id="opt1"></button>
+      <button onclick="checkAnswer(2)" id="opt2"></button>
+      <button onclick="checkAnswer(3)" id="opt3"></button>
+    </div>
+  </div>
+
+  <div id="result-box" class="hidden"></div>
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
